@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     overflow: initial;
     overflow-x: clip
@@ -51,6 +55,24 @@ ul li {
 #RSVP {
     background-color: dodgerblue;
 }
+
+#form-RSVP {
+    display: flex;
+    flex-direction: column;
+}
+
+.opcion-boda {
+    margin: 0 10% 15px 10%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.opcion-boda input {
+    margin-right: 10px;
+}
+
 @media (max-width: 800px) {
 
     #btn-menu {
@@ -69,6 +91,11 @@ ul li {
         height: 100vh;
         padding: 0 20%;
         z-index: 2;
+    }
+
+    #map-container {
+        width: fit-content;
+        margin: 50px auto;
     }
 
     li {

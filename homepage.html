@@ -13,12 +13,12 @@
                 <img src="/imágenes/open-menu_4083576.png" alt="button" style="width: 100px; height: 100px;">
             </button>
             <ul id="nav-menu">
-                <li><a href="#Poema" transform-origin: center center 0px;></a>Intro</li>
-                <li><a href="#Acomp" transform-origin: center center 0px;>Acomp</a></li>
-                <li><a href="#Detalles">Detalles</a></li>
-                <li><a href="#Ubicación">Ubicación</a></li>
-                <li><a href="#Vestimenta">Vestimenta</a></li>
-                <li><a href="#RSVP">RSVP</a></li>
+                <li><a href="#Poema" onclick="showMenu()"></a>Intro</li>
+                <li><a href="#Acomp" onclick="showMenu()">Acomp</a></li>
+                <li><a href="#Detalles" onclick="showMenu()">Detalles</a></li>
+                <li><a href="#Ubicación" onclick="showMenu()">Ubicación</a></li>
+                <li><a href="#Vestimenta" onclick="showMenu()">Vestimenta</a></li>
+                <li><a href="#RSVP" onclick="showMenu()">RSVP</a></li>
             </ul>
         </nav>
         <main> 
@@ -33,13 +33,37 @@
             </div>
             <div id="Ubicación" class="div-page">
                 <h1>Ubicación</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.0093356783527!2d-3.693608326059878!3d40.40864397017595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEl%20Jard%C3%ADn%20de%20Arz%C3%A1bal%2C%20Museo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa%2C%20Edificio%20Sabatini%2C%20C.%20de%20Sta.%20Isabel%2C%2052%2C%20Centro%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1744112865950!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.0093356783527!2d-3.693608326059878!3d40.40864397017595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEl%20Jard%C3%ADn%20de%20Arz%C3%A1bal%2C%20Museo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa%2C%20Edificio%20Sabatini%2C%20C.%20de%20Sta.%20Isabel%2C%2052%2C%20Centro%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1744112865950!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <p>Ubicación: Museo Nacional Centro de Arte Reina Sofía, Edificio Sabatini, C. de Sta. Isabel, 52, Centro, 28012 Madrid</p>
+                </div>
+                
             </div>
             <div id="Vestimenta" class="div-page">
                 <h1>Vestimenta</h1>
             </div>
             <div id="RSVP" class="div-page">
                 <h1>RSVP</h1>
+                <form action="" id="form-RSVP" >
+                    <div>                       
+                        <textarea name="Nombre" id="nombre-form" placeholder="Nombre"></textarea>
+                    </div>
+                    <div>
+                        <div class="opcion-boda">
+                            <input type="checkbox" id="Civil" value="civil" name="civil">
+                            <label for="civil">Civil</label>
+                        </div>
+                        <div class="opcion-boda">
+                            <input type="checkbox" name="" id="Ceremonia" value="ceremonia" name="ceremonia">
+                            <label for="ceremonia">Ceremonia</label>
+                        </div>
+
+                    </div>
+                    
+                    <input type="submit" value="submit" id="btn-form-submit">
+                </form>
             </div>
         </main>
     </body>
