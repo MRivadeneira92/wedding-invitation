@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    overflow: initial;
+    overflow-x: clip
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    padding: 5px;
+}
+
+.div-page {
+    width: 100%;
+    height: 100vh;
+}
+
+#btn-menu {
+    display: none;
+    z-index: 3;
+}
+
+#Poema {
+    background-color: aliceblue;
+}
+
+#Acomp {
+    background-color:darkolivegreen;
+}
+
+#Detalles {
+    background-color: bisque;
+}
+
+#Ubicación {
+    background-color: cadetblue;
+}
+
+#Vestimenta {
+    background-color: darksalmon;
+}
+
+#RSVP {
+    background-color: dodgerblue;
+}
+@media (max-width: 800px) {
+
+    #btn-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+    }
+
+    #nav-menu {
+        display: none;
+        width: 100%;
+        background-color: cornflowerblue;
+        position: absolute;
+        height: 100vh;
+        padding: 0 20%;
+        z-index: 2;
+    }
+
+    li {
+        font-size: 2rem;
+    }
+}
