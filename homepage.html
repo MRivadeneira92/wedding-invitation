@@ -29,7 +29,13 @@
                 <h1>Acompañanos</h1>
             </div>
             <div id="Detalles" class="div-page">
-                <h1>Detalles</h1>
+                <h1>Detalles civil</h1>
+            </div>
+            <div class="div-page">
+                <h1>Mapa Civil</h1>
+            </div>
+            <div class="div-page">
+                <h1>Detalles ceremonia</h1>
             </div>
             <div id="Ubicación" class="div-page">
                 <h1>Ubicación</h1>
@@ -46,22 +52,22 @@
             </div>
             <div id="RSVP" class="div-page">
                 <h1>RSVP</h1>
-                <form action="" id="form-RSVP" >
+                <form action="https://script.google.com/macros/s/AKfycbz2x5m0wpeC-eDl-DLOZpmvWMC1lzeCQFthr8YQSqX_6DDLyWOuEAkgZzZ5xgMvkkrW/exec" 
+                id="form-RSVP" method="POST" >
                     <div>                       
                         <textarea name="Nombre" id="nombre-form" placeholder="Nombre"></textarea>
                     </div>
                     <div>
                         <div class="opcion-boda">
-                            <input type="checkbox" id="Civil" value="civil" name="civil">
+                            <input type="checkbox" id="Civil" value="Si" name="Civil">
                             <label for="civil">Civil</label>
                         </div>
                         <div class="opcion-boda">
-                            <input type="checkbox" name="" id="Ceremonia" value="ceremonia" name="ceremonia">
+                            <input type="checkbox" name="" id="Ceremonia" value="Si" name="Ceremonia">
                             <label for="ceremonia">Ceremonia</label>
                         </div>
 
                     </div>
-                    
                     <input type="submit" value="submit" id="btn-form-submit">
                 </form>
             </div>
