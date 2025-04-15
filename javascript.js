@@ -15,31 +15,9 @@ document.onload = (event) => {
 }
 let btnMenu = document.getElementById("#btn-menu");
 
-
-
-function selectOption() {
-
-
+function selectOption(lugar) {
+    document.querySelector(`#${lugar}`).click() 
 }
-
-
-    url = 'https://script.google.com/macros/s/AKfycbwY5CfUC1niDgsQgwXYJ15fKvjR9jYTRG57aRahITVZv1_1szIXkOYTwjqli97WYX0l/exec'
-
-
-document.querySelector("#btn-form-submit").addEventListener('click', function(e) {
-    console.log("Click!")
-    e.preventDefault();
-    var jqxhr = $.ajax({
-        
-        url: url,
-        method: "GET",
-        dataType: "json",
-        data: $form.serializeObject()
-    }
-    ).success(
-        // do something
-    );
-    })
 
 function showMenu() {
     let navMenu = document.querySelector("#nav-menu");

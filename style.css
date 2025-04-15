@@ -32,6 +32,12 @@ ul li {
     z-index: 3;
 }
 
+#btn-form-submit {
+    width: 200px;
+    height: 25px;
+
+}
+
 #Poema {
     background-color: aliceblue;
 }
@@ -59,10 +65,23 @@ ul li {
 #form-RSVP {
     display: flex;
     flex-direction: column;
+    padding: 0 15%;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;;
+}
+
+.map-container {
+    height: 60%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .opcion-boda {
-    margin: 0 10% 15px 10%;
+   /* margin: 0 10% 15px 10%;*/
+    margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
     background-color: antiquewhite;
@@ -77,16 +96,35 @@ ul li {
     position: fixed;
     top: 0;
 }
+
 nav {
     width: 100%;
 }
 
+#nombre-form {
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
 @media (max-width: 800px) {
+    .map-container {
+        margin: 0 auto;
+        width: 100%;
+    }
 
     #btn-menu {
         display: block;
         right: 0;
+    }
 
+    #btn-form-submit {
+        width: 100%;
+
+    }
+    .div-page {
+        padding: 10%; 
     }
 
     #nav-menu {
@@ -98,9 +136,9 @@ nav {
         z-index: 2;
     }
 
-    #map-container {
-        width: fit-content;
-        margin: 50px auto;
+    #nombre-form {
+        width: 100%;
+
     }
 
     li {
